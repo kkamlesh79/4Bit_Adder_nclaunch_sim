@@ -15,11 +15,15 @@ To construct a 4-bit adder, need to chain together four 1-bit full adders. Each 
 
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
+
 ![image](https://github.com/user-attachments/assets/716a26b6-a449-42e0-9e2d-cdbaa4b291b9)
+
 
 Here’s the truth table for a 1-bit full adder:
 
+
 ![tt](https://github.com/user-attachments/assets/0b3ab24f-1d7e-4a01-80ce-5e7406f4082b)
+
 
 ### Fig 1 : Diagram and truth table of full adder
 
@@ -35,7 +39,9 @@ Where ⊕ represents XOR.
    
 COUT=(A&B) | (CIN&(A^B))
 
+
 ![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
+
 
 ### Fig 2:Diagram of 4 Bit Adder
 
@@ -84,7 +90,9 @@ or
 
 	It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
 
+ 
 ![pvlsi exp 1](https://github.com/user-attachments/assets/4c1a64c2-f9da-49b2-88f1-308c64167e31)
+
 
 ### Fig 4:Setting Multi-step simulation
 
@@ -97,6 +105,7 @@ or
 
 ### Fig 5:cds.lib file Creation
 
+ 
 	Save cds.lib file and select the correct option for cds.lib file format based on the HDL Language and Libraries used. 
 
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure .
@@ -109,6 +118,7 @@ or
 
 
 ### Fig 6: Selection of Don’t include any libraries
+
 
 ![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
@@ -139,6 +149,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
+
 ![pvlsi  exp 1 (5)](https://github.com/user-attachments/assets/43472764-d539-405d-8542-c231f8671404)
 
 
@@ -149,6 +160,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Select the test bench and compile it. It will come under worklib. Under Worklib you can see the module and test-bench. 
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+
 
 ![pvlsi exp 1 (6)](https://github.com/user-attachments/assets/0630fedf-09b8-4263-b91d-1ceb65797d4a)
 
@@ -171,6 +183,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 ![pvlsi exp 1(6)](https://github.com/user-attachments/assets/075122cc-2a0a-4e26-bdfd-95500e1afcd2)
 
+
 ### Fig 9: Elaboration Launch Option
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
@@ -187,11 +200,15 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 ### Fig 10: Design Browser window for simulation
 
+
 ![pvlsi exp 2 (7)](https://github.com/user-attachments/assets/2aa5d0ae-fdcc-4fdc-9152-8c86e04d6c1c)
+
 
 ### Fig 11: Launching Simulation Waveform WindowSimulation Waveform Window
 
+
 ![pvlsi exp 1(8)](https://github.com/user-attachments/assets/6d92763e-571e-4b3c-8ecf-a85476bb9ec5)
+
 
 ### Fig 12: Simulation Waveform Window
 
